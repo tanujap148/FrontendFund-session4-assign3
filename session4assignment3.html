@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: green;
+	left: 600px;
+	top: 10px;
+	position: absolute;
+    /* Chrome, Safari, Opera */
+    -webkit-animation-name: example;
+    -webkit-animation-duration: 10s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-delay: 2s;
+    -webkit-animation-iteration-count: 2;
+    -webkit-animation-direction: alternate;
+    -webkit-animation-fill-mode: forwards;
+    /* Standard syntax */
+    animation-name: example;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-delay: 3s;
+    animation-iteration-count: 1;
+    animation-direction: alternate;
+    animation-fill-mode: forwards;
+}
+.text{
+	position: relative;
+	margin-top: 40px;
+	text-align: center;
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes example {
+    0%   {background-color:green; left:600px; top:10px; border-radius:0px;}
+    25%  {background-color:orange; left:600px; top:10px; border-radius:10px;}
+    50%  {background-color:orange; left:600px; top:10px; border-radius:20px;}
+    75%  {background-color:orange; left:600px; top:10px; border-radius:35px;}
+    100% {background-color:orange; left:600px; top:10px; border-radius:50px;}
+}
+
+/* Standard syntax */
+@keyframes example {
+    0%   {background-color:green; left:600px; top:10px; border-radius:0px;}
+    25%  {background-color:orange; left:600px; top:10px; border-radius:10px;}
+    50%  {background-color:orange; left:600px; top:10px; border-radius:20px;}
+    75%  {background-color:orange; left:600px; top:10px; border-radius:35px;}
+    100% {background-color:orange; left:600px; top:10px; border-radius:50px;}
+}
+</style>
+</head>
+<body>
+
+<div class="box">
+	<div class="text"><b>Box</b></div>
+</div>
+</body>
+</html>
